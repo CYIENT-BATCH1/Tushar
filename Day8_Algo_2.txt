@@ -1,0 +1,8 @@
+5. Write a program in C to sort an array using Pointer. The sample output must be as below
+
+  Algorithm:
+1.Intialise the array,store and read the array values using a ponter.
+2.Write the sorting logic,intialise the two for loop.
+3.If sort will start by comparing the first element of the array with the second element, 
+if the first element is greater than the second element,
+it will swap both the elements, and then move on to compare the second and the third element
