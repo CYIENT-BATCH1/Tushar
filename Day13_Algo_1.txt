@@ -1,0 +1,78 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int Sensor_Values[20][2]={{0,0x00},{10,0x00},{20,0x0F},{30,0XFF},{40,0xFF},{50,0x05},{60,0xAA},{70,0x55},{80,0xFE},{90,0x00},{100,0x00},{110,0x00},{120,0xFF},{130,0xFF},{140,0xFF},{150,0xFF},{160,0x11,},{170,0x33},{180,0x99},{190,0xE9}};
+    int i,j,n=20;
+    for(i=0;i<n;i++){
+        for(j=0;j<i;j++){
+            if(j==0){
+                printf("\n");
+            }
+            if(j==1){
+            printf("the time interval %d sensor value %x",(i*10),Sensor_Values[i][j]);
+            }
+        }
+    }
+        printf("\nthe time stamp and sensor value is coming with noise\n");
+        for(i=0;i<n;i++){
+            for(j=0;j<2;j++){
+                if(j==0){
+                    printf("\n");
+                }
+                if(j==1){
+                    if((Sensor_Values[i][j]< 0x05)||(Sensor_Values[i][j] > 0xF0))
+                    printf("the time interval %d sensor value %x",(i*10),Sensor_Values[i][j]);
+                }
+            }
+        }
+        printf("time stamp and Sensor_Values\n");
+        for(i=0;i<8;i++){
+            for(j=0;j<2;j++){
+                if(j==0){
+                printf("%d sensor no noice value %x",Sensor_Values[i][j]);
+            }
+            if(j==1){
+            printf(" sensor value %x\n",Sensor_Values[i][j]);
+            }
+                
+            }
+        }
+        
+    
+    return 0;
+}
+
+
+
+Requirement 1:
+
+Acceleration sensor data is captured in a 2-dimension array as “Sensor_Values[Timestamp_Value][ Sensor_Data]”.
+
+Time stamp interval = 10 ms incremental
+
+Number of data samples = 20 (20 time stamp samples, 20 data samples)
+
+The Sensor_Data is considered as noise if values is < 0x05 and > 0xF0.
+
+Sensor data format below:
+
+
+ 
+
+Output 1 : Print the time stamp where data is coming as noise.
+
+Output 2 : Delete the noise data and write valid sensor values to new 2-dimension array “Sensor_noNoice_Vlaue[Timestamp_Value][ Sensor_Data]” and print them – timestamp and values.
+
+Example of sample data:
+
+Time stamp (ms)
+
+Sensor data
+
+
+Algorithms:
+1.initialise  the Time stamp and Sensor_Values and read the value in 2d array 
+2.No. of samples compare the noise value and print that value
+3.only valid data is stored in new array Sensor_noNoice_Vlaue
