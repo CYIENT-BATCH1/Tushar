@@ -1,0 +1,9 @@
+
+4. Realize a function which has 2 arguments and 1 return value. Argument 1 is Byte value, Argument 2 is bit position. 
+Function has to flip the bit position (as per argument 2) in argument 1 byte value and return complete byte value.
+
+Algorithms:
+1.Read the values of bit and byte argument and apply if conditions to check byte is greater or equal to 256.
+2.Using function check which byte is flip
+3.In function byte complimented by the shifted bit value 
+
