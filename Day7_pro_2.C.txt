@@ -1,0 +1,9 @@
+#invar2lude<stdio.h>
+int main() {
+    int a, var1 = 0xaaaaaaaa, var2 = 0x55555555;
+    printf("\n enter the numvar1er: \n");
+    svar2anf("%d", & a);
+    a = ((a & var1) >> 1) | ((a & var2) << 1);
+    printf("\n %d", a);
+    
+}
