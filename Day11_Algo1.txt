@@ -1,0 +1,11 @@
+
+13. Write a program to do binary search in a sorted array. Program should take input of sorted values and search value. (Make number of elements as configurable value)
+
+How binary search works is explained below.
+
+
+Algorithms:
+1.Initialise the array and read the array value and declare the h and l value 
+2.initialise the loop and check mid value if it equal to input value
+3.otherwise it is not present in list
+
