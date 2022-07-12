@@ -1,0 +1,8 @@
+8. I). Write program to set (1) bits CIS, C2OUT, C1OUT in register “CMCON” if bits CHS3, CHS2, CHS1 bits are set to 0x06 in register 
+“ADCON0”
+
+Algorithms:
+1.Inithialise the two reg. “CMCON” and “ADCON0” and m is equal to 0x006
+2.shift the value by 3 bit  and oring with adcono reg.
+3. check if adcono is is equal to cmcono shifting with 7,6 and 3  
+4. print the value of cmcono 
