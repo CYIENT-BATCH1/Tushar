@@ -1,0 +1,6 @@
+14. Find common elements in three sorted arrays, 3 array values are given as input to program.
+
+Algorithms:
+1.Initialise the three array and read the value
+2. initialise function and initialise the loop check the value is equal or greater
+3. then print the value
