@@ -1,0 +1,12 @@
+
+2. Write a code to swap even bits with odd bits in unsigned long variable(uint64).
+
+
+Example: bit 0 with bit 1; bit 2 with bit 3; bit 4 with bit
+
+Algorithms:
+1.Take the two const variables with alternate bit set for ex var1 = 0x55555555 and Var2 = 0xaaaaaaaa
+2. Perform Bitwise AND of the number which is to be swap with var1 and right shift it with 1 and similarly perfomed 
+the bitwise AND of the number which is to be swap with var2 and right shift with 1 and then perform Bitwise OR and 
+assign the result to number to be SWAP
+
