@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+    int n=23,i,b=0;
+    for(i=0;i<=3;i++){
+        b=b|(((n>>(i*8)&0xFF)<<((3-i)*8)));
+    }
+    printf("the value is %x  ",b);
+}
